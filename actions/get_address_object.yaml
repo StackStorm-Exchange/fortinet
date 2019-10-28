@@ -5,6 +5,13 @@ description: "Get Address Object Details"
 enabled: true
 entry_point: "get_address_object.py"
 parameters:
-    name:
+    specific:
         type: string
         description: "name of the address object"
+        position: 0
+        required: False
+    filters:
+        type: string
+        description: "Filter values based on Fortinet filter syntax"
+        position: 1
+        required: False

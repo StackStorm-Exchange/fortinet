@@ -1,10 +1,17 @@
 name: get_address_group
 pack: fortinet
 runner_type: python-script
-description: "Get Firewall Address Group"
+description: "Get Firewall Address Group. Run with no parameters to get all groups."
 enabled: true
 entry_point: "get_address_group.py"
 parameters:
     name:
         type: string
         description: "name of the address group"
+        position: 0
+        required: False
+    filters:
+        type: string
+        description: "Filters as defined in the FortiOS API guide. Example: `visibility==enable`"
+        position: 1
+        required: False

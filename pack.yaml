@@ -6,6 +6,11 @@ keywords:
     - firewalls
     - threat
     - security
-version: 0.0.3
+version: 0.1.0
+python_versions:
+  - "2"
+  - "3"
 author: StackStorm, Inc.
 email: info@stackstorm.com
+contributors:
+    - JP Bourget <jp@syncurity.net>
